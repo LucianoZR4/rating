@@ -1,0 +1,169 @@
+:root{
+    --naranja:#fb7413;
+    --blanco: #ffffff;
+    --grisClaro: #959eac;
+    --Gris: #7c8798;
+    --azul: #252d37;
+    --azulOscuro: #121417;
+
+    --fontPrimary:'Overpass', sans-serif;
+} 
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--fontPrimary);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    background-color:#000000;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+/*CSS*/
+
+.card,
+.gracias{
+    max-width: 100%;
+    width: 40rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    background: linear-gradient(#212831, #191b1f);;
+}
+
+.card{
+    position: relative;
+    background-color:var(--azul);
+    max-width: 40rem;
+    border-radius: 4rem;
+}
+
+.card__imagen{
+    background-color: var(--azul);
+    height: 4rem;
+    width: 4rem;
+    padding: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img{
+    width: 2rem;
+}
+
+.card__heading{
+    color: var(--blanco);
+    margin:2.5rem 0rem 1rem 0rem;
+}
+
+.card__texto{
+    color:var(--grisClaro);
+    margin:0;
+}
+
+.formulario__puntaje{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem;
+}
+
+.formulario__puntaje-punto,
+.formulario__submit{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+.formulario__puntaje-punto{
+    background-color: var(--azul);
+    color: var(--grisClaro);
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__puntaje-punto:hover{
+    background-color: var(--Gris);
+}
+
+.activo{
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+.formulario__submit{
+    color: var(--blanco);
+    background-color: var(--naranja);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 700;
+    padding: 1.8rem;
+    border-radius: 3rem;    
+}
+
+.formulario__submit:hover{
+    background-color: var(--blanco);
+    color: var(--naranja);
+}
+
+/*PARTE DE AGRADECIMIENTO*/
+.gracias{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+.gracias__select{
+    display: inline-block;
+    margin: 1.5rem 0;
+    color: var(--naranja);
+    background-color:var(--azul);
+    padding:0.5rem 2rem 0.5rem;
+    border-radius: 3rem;
+}
+
+.gracias__heading{
+    margin: 0;
+}
+
+.gracias__texto{
+    color: var(--grisClaro);
+    margin-top: 1.5rem;
+}
+
+.gracias__img{
+    width: 15rem;
+}
